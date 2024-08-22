@@ -352,6 +352,15 @@
 
 
 /*******************************/
+.sakura-falling::-webkit-scrollbar {
+	display: none;
+}
+
+.sakura-falling {
+	-ms-overflow-style: none; /* IE and Edge */
+	scrollbar-width: none; /* Firefox */
+}
+
 body {
 	font-family: Arial, Helvetica, Sans-serif;
 	/* background-color: #FFFDD0; */
@@ -504,8 +513,8 @@ body {
 }
 
 #time {
-	width: 300px;
-	max-width: 300px;
+	width: 270px;
+	max-width: 270px;
 	height: auto;
 	margin: 10px;
 	padding: 20px;
@@ -531,6 +540,8 @@ body {
 }
 
 .container {
+	/* font-weight: bold; */
+	font-size: 30px;
 	display: grid;
 	grid-template-columns: 1fr 1fr;
 	border-radius: 10px;
@@ -539,7 +550,7 @@ body {
 
 .block {
 	width: auto;
-	height: 120px;
+	height: 135px;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -548,19 +559,31 @@ body {
 }
 
 .days {
+	display: flex;
+	flex-direction: column;
 	background: linear-gradient(90deg, #b33a46, #9b313c);
 }
 
 .hours {
+	display: flex;
+	flex-direction: column;
 	background: linear-gradient(90deg, #a7c3cd, #90a9b2);
 }
 
 .minutes {
+	display: flex;
+	flex-direction: column;
 	background-color: #874562;
 }
 
 .seconds {
+	display: flex;
+	flex-direction: column;
 	background-color: #145689;
+}
+
+.size{
+	font-size: 18px;
 }
 
 .date {
@@ -615,8 +638,8 @@ a {
 	display: flex;
 	justify-content: center;
 	color: #000000;
-	font-size: 12px;
-	margin-top: 15px;
+	font-size: 7px;
+	margin-top: 20px;
 	gap: 12px;
 }
 
@@ -625,8 +648,8 @@ a {
 }
 
 .GitHub img {
-	width: 15px;
-	height: 15px;
+	width: 9px;
+	height: 9px;
 	cursor: pointer;
 }
 

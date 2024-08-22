@@ -15,6 +15,15 @@ const EngagementInvite = () => {
     }
   };
 
+  const downloadInvitation = () => {
+    const link = document.createElement('a');
+    link.href = 'https://github.com/Raj-Dusane/Invitation/raw/main/src/assets/Invitation_Card/Invitation_Card.png';
+    link.download = 'Invitation_Card.png';
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  };
+
   useEffect(() => {
     playAudio();
     if (window.$) {
@@ -48,9 +57,13 @@ const EngagementInvite = () => {
           <a href="https://www.google.com/maps/place/Ekadashi+Pure+Veg+%26+Banquet+Hall/@18.5790497,73.8194351,1061m/data=!3m2!1e3!4b1!4m6!3m5!1s0x3bc2b9fa88974eed:0x20c3798ed8892c3e!8m2!3d18.5790497!4d73.8194351!16s%2Fg%2F11y5jydjmj?entry=ttu" target="_blank" rel="noopener noreferrer">
             <div className="venue">LOCATION</div>
           </a>
-          <a href="https://drive.google.com/file/d/1QRiPq9grvYvG2aQGUR3xvrtBSvF2RH4F/view?usp=drive_link" target="_blank" download="Invitation | 27 Aug | Hope to see you there!">
+
+          {/* href="https://drive.google.com/file/d/1QRiPq9grvYvG2aQGUR3xvrtBSvF2RH4F/view?usp=drive_link" */}
+          {/* <button onClick={downloadInvitation} className="venue"> */}
+          <a href='https://github.com/Raj-Dusane/Invitation/raw/main/src/assets/Invitation_Card/Invitation_Card.png' target="_blank" type='text/plain' download="Invitation_Card.png">
             <div className="venue">DOWNLOAD INVITATION CARD</div>
           </a>
+          {/* </button> */}
         </div>
 
         <p className="footer">

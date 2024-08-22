@@ -36,7 +36,7 @@ var x = setInterval(function() {
     var seconds = Math.floor((distance % (1000 * 60)) / 1000);
     
     // Output the result in an element with id="demo"
-    document.getElementById("time").innerHTML = "<div class='container'><div class='days block'>"+ days + "<br>Days</div>" + "<div class='hours block'>" + hours + "<br>Hours</div>" + "<div class='minutes block'>" + minutes + "<br>Minutes</div>" + "<div class='seconds block'>" + seconds + "<br>Seconds</div></div>";
+    document.getElementById("time").innerHTML = "<div class='container'><div class='days block'>"+ days + "<br> <span class='size'> Days </span> </div>" + "<div class='hours block'>" + hours + "<br> <span class='size'> Hours </span></div>" + "<div class='minutes block'>" + minutes + "<br> <span class='size'> Minutes </span> </div>" + "<div class='seconds block'>" + seconds + "<br><span class='size'>Seconds</span></div></div>";
 
     if (distance < 0) {
         clearInterval(x);
