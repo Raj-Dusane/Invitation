@@ -8,6 +8,7 @@ import rightFlower from './assets/img/pinkFlower_right.png';
 import midFlower from './assets/img/midFlower.png';
 import GitHub from './assets/img/github.png';
 import song from '/mp3/Kudmayi.mp3';
+import invitationCard from './assets/Invitation_Card/Invitation_Card.png';
 import './style.css';
 
 const EngagementInvite = () => {
@@ -82,7 +83,8 @@ const EngagementInvite = () => {
           <a href="https://www.google.com/maps/place/Ekadashi+Pure+Veg+%26+Banquet+Hall/@18.5790497,73.8194351,1061m/data=!3m2!1e3!4b1!4m6!3m5!1s0x3bc2b9fa88974eed:0x20c3798ed8892c3e!8m2!3d18.5790497!4d73.8194351!16s%2Fg%2F11y5jydjmj?entry=ttu" target="_blank" rel="noopener noreferrer">
             <div className="venue">LOCATION</div>
           </a>
-          <a href='https://github.com/Raj-Dusane/Invitation/raw/main/src/assets/Invitation_Card/Invitation_Card.png' target="_blank" type='text/plain' download="Invitation_Card.png">
+          {/* href='https://github.com/Raj-Dusane/Invitation/raw/main/src/assets/Invitation_Card/Invitation_Card.png' */}
+          <a href={invitationCard} download="Invitation_Card.png">
             <div className="venue">DOWNLOAD INVITATION CARD</div>
           </a>
         </div>
