@@ -50,7 +50,7 @@ const EngagementInvite = () => {
       
       if (distance < 0) {
         clearInterval(x);
-        document.getElementById("time").innerHTML = "Congra!";
+        document.getElementById("time").innerHTML = "congratulations!";
       }
     }, 1000);
 
