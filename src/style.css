@@ -640,14 +640,14 @@ a {
 	justify-content: center;
 	align-items: center;
 	font-size: 9px;
-	gap: 4px;
+	gap: 12px;
 }
 
 .links img {
 	margin: 0px;
 	padding: 0px;
-	width: 20px;
-	height: 9px;
+	width: 14px;
+	height: 12px;
 	cursor: pointer;
 }
 
