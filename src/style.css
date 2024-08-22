@@ -363,7 +363,7 @@
 
 body {
 	font-family: Arial, Helvetica, Sans-serif;
-	/* background-color: #FFFDD0; */
+	background-color: #ffffff;
 }
 
 img {
@@ -635,20 +635,29 @@ a {
 }
 
 .links {
-	margin-top: 20px;
+	margin-top: 30px;
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	font-size: 9px;
-	gap: 12px;
+	font-size: 7px;
+	gap: 8px;
+}
+
+.cite {
+	justify-content: flex-end;
+	font-size: 12px;
 }
 
 .links img {
 	margin: 0px;
 	padding: 0px;
-	width: 10px;
+	width: 20px;
 	height: 10px;
 	cursor: pointer;
+}
+
+.copyrights {
+	font-size: 12px;
 }
 
 .music {

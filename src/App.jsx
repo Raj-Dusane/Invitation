@@ -99,9 +99,10 @@ const EngagementInvite = () => {
         </div>
 
         <p className="happiness"> Your presence is requested! <br />
+        <cite className="cite"> -- Kharote Family -- </cite>
           <div className="links">
             <a href="https://github.com/raj-dusane" target="_blank" rel="noopener noreferrer" className="GitHub"> <img src={GitHub} alt="" /> </a>
-            <a href="https://www.linkedin.com/in/rajdusane/" target="_blank" className="linkedIn" style={{textDecoration:"None"}}> &#169; Raj Dusane</a> 
+            <a href="https://www.linkedin.com/in/rajdusane/" target="_blank" className="linkedIn"> <span className='copyrights'>&#169;</span> Raj Dusane</a> 
           </div>
         </p>
       </div>
