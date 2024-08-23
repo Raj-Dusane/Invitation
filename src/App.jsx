@@ -10,6 +10,7 @@
  */
 
 import React, { useEffect } from 'react';
+import { Analytics } from '@vercel/analytics/react';
 import leftFlower from './assets/img/pinkFlower_left.png';
 import rightFlower from './assets/img/pinkFlower_right.png';
 import midFlower from './assets/img/midFlower.png';
@@ -66,6 +67,7 @@ const EngagementInvite = () => {
 
   return (
     <div className="sakura-falling" onClick={playAudio}>
+      <Analytics />
       <img src={rightFlower} alt="image-top-right" className="top-right-decoration" />
       <img src={leftFlower} alt="image-top-left" className="top-left-decoration" />
       
