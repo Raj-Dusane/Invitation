@@ -357,13 +357,14 @@
 }
 
 .sakura-falling {
-	-ms-overflow-style: none; /* IE and Edge */
-	scrollbar-width: none; /* Firefox */
+	-ms-overflow-style: none;
+	scrollbar-width: none;
 }
 
 body {
 	font-family: Arial, Helvetica, Sans-serif;
 	background-color: #ffffff;
+	/* background-color: #fff8f9; */
 }
 
 img {
@@ -372,8 +373,14 @@ img {
 }
 
 @media (max-width:900px) {
-	img {
-		max-width: 45%;
+	.top-right-decoration {
+		max-width: 52%;
+	}
+	.top-left-decoration {
+		max-width: 52%;
+	}
+	.midFlower {
+		max-width: 80%;
 	}
 }
 
@@ -391,14 +398,19 @@ img {
 	display: block;
 }
 
+#god {
+	color: #b33a46;
+	/* color: #9b313c; */
+	font-weight: bold;
+	font-size: 14px;
+	margin-top: 80px;
+}
+
 .title #Vaishnavi {
 	font-family: "Bonheur Royale", cursive;
 	font-weight: 500;
 	font-style: normal;
 	font-size: 55px;
-	/* margin-bottom: 10px; */
-	/* padding-top: 15px; */
-	margin: 30px 0 15px 0;
 	color: #674ea7;
 }
 
@@ -407,19 +419,8 @@ img {
 	font-weight: 500;
 	font-style: normal;
 	font-size: 55px;
-	margin: 10px 0 50px 0px;
+	margin: 7px 0px 0px 0px;
 	color: #674ea7;
-}
-
-.title h2 {
-	font-family: 'Dancing Script', cursive;
-	font-weight: bold;
-	font-style: italic;
-	margin: 0;
-	padding: 0;
-	font-size: 24px;
-	color: #e25c67;
-	line-height: 0;
 }
 
 .greet {
@@ -454,11 +455,39 @@ img {
 	font-size: 15px;
 }
 
-.title img {
-	cover: overflow;
-	margin: 30px 0px 0px 0px;
-	width: 80%;
-	/* height: 200px; */
+.title .midFlower {
+	margin: 30px;
+	width: 90%;
+	height: 90%;
+}
+
+.heartContainer {
+	position: relative;
+	text-align: center;
+}
+
+.heartContainer h2 {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	font-family: 'Dancing Script', cursive;
+	font-weight: bold;
+	font-style: italic;
+	margin: 0;
+	padding: 0;
+	font-size: 24px;
+	/* color: #ff9aa2; */
+	color: #ff99a1;
+	line-height: 0;
+}
+
+.bottom-flowers {
+	margin: 0px 0px 30px 0px;
+	padding: 0px;
+	display: flex;
+	width: 50%;
+	overflow: visible;
 }
 
 .holder{
@@ -477,7 +506,7 @@ img {
 	justify-content: center;
 	-webkit-align-items: center;
 	align-items: center;
-	padding: 15px;
+	padding: 15px 0px;
 	text-align: center;
 	min-height:100%;
 }
@@ -504,19 +533,11 @@ body {
 	margin-top: 20px;
 }
 
-#god {
-	color: #b33a46;
-	/* color: #9b313c; */
-	font-weight: bold;
-	font-size: 14px;
-	margin-top: 60px;
-}
-
 .title .heart {
 	height: 100px;
 	width: 100px;
 	margin: 0px;
-	transform: rotate(3deg);
+	transform: rotate(10deg);
 }
 
 #time {

@@ -12,10 +12,12 @@
 import React, { useEffect } from 'react';
 import { Analytics } from '@vercel/analytics/react';
 import { Fade } from "react-awesome-reveal";
-import leftFlower from './assets/img/pinkFlower_left.png';
-import rightFlower from './assets/img/pinkFlower_right.png';
+import leftFlower from './assets/img/rose.png';
+import rightFlower from './assets/img/roseRight.png';
 import midFlower from './assets/img/midFlower.png';
-import heart from './assets/img/heart.webg';
+import leftBottom from './assets/img/lefBottom.png'
+import rightBottom from './assets/img/rightBottom.png'
+import heart from './assets/img/heart.webp';
 import invitationCard from './assets/Invitation_Card/Invitation_Card.png';
 import song from '/mp3/With-You-Ap-Dhillon.mp3';
 import 'animate.css';
@@ -80,17 +82,23 @@ const EngagementInvite = () => {
             <Fade direction='down' triggerOnce={true} effect="bounce">
               <h1 id="Vaishnavi">Vaishnavi</h1>
             </Fade>
-            {/* <Fade> */}
-              {/* <h2>&</h2> */}
-                <img className="heart animate__heartBeat" src={heart}/>
-            {/* </Fade> */}
+            <Fade triggerOnce={true}>
+              <div className="heartContainer animate__heartBeat">
+                <img className="heart" src={heart}/>
+                <h2>&</h2>
+              </div>
+            </Fade>
             <Fade direction='up' triggerOnce={true}>
               <h1 id="Aditya">Aditya</h1>
+              <div className="bottom-flowers">
+                <img src={leftBottom} alt="" />
+                <img src={rightBottom} alt="" />
+              </div>
             </Fade>
             <Fade cascade damping={0.2} triggerOnce={true}>
               <h3>Are getting engaged</h3>
               <p> on <span className="date">27th August 2024, 10:30 AM</span>, At <span className="place">Ekadashi Banquet Hall</span>, Sangavi, Pune. </p>
-              <img src={midFlower} alt="" srcset="" />
+              <img className='midFlower' src={midFlower} alt="" srcset="" />
             </Fade>
           </div>
         </div>
