@@ -14,7 +14,6 @@ import { Analytics } from '@vercel/analytics/react';
 import leftFlower from './assets/img/pinkFlower_left.png';
 import rightFlower from './assets/img/pinkFlower_right.png';
 import midFlower from './assets/img/midFlower.png';
-import GitHub from './assets/img/github.png';
 import song from '/mp3/Kudmayi.mp3';
 import invitationCard from './assets/Invitation_Card/Invitation_Card.png';
 import './style.css';
@@ -37,7 +36,7 @@ const EngagementInvite = () => {
       $('.sakura-falling').sakura();
     }
 
-    const countDownDate = new Date("Aug 27, 2024 10:00:00").getTime();
+    const countDownDate = new Date("Aug 27, 2024 10:30:00").getTime();
 
     const x = setInterval(() => {
       const now = new Date().getTime();
@@ -110,7 +109,6 @@ const EngagementInvite = () => {
         <p className="happiness"> Your presence is requested! <br />
         <cite className="cite"> -- Kharote Family -- </cite>
           <div className="links">
-            {/* <a href="https://github.com/raj-dusane" target="_blank" rel="noopener noreferrer" className="GitHub"> <img src={GitHub} alt="" /> </a> */}
             <a href="https://www.linkedin.com/in/rajdusane/" target="_blank" className="linkedIn"> Copyright <span className='copyrights'>&#169;</span> 2024 Raj Dusane <br/> All rights reserved. [licensed]</a> 
           </div>
         </p>
