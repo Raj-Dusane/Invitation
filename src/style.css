@@ -640,7 +640,7 @@ a {
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	font-size: 7px;
+	font-size: 4px;
 	color: #674ea7;
 	gap: 8px;
 }
@@ -654,13 +654,13 @@ a {
 .links img {
 	margin: 0px;
 	padding: 0px;
-	width: 12px;
+	width: 15px;
 	height: 10px;
 	cursor: pointer;
 }
 
 .copyrights {
-	font-size: 10px;
+	font-size: 6px;
 }
 
 .music {

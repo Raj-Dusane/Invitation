@@ -1,5 +1,12 @@
 /**
  * @author Raj Dusane <dusaneraj15@gmail.com>
+ *  
+ *  Copyright (c) 2024, Raj Dusane
+ *  All rights reserved.
+ * 
+ *  This source code is licensed under the BSD-style license found in the
+ *  LICENSE file in the root directory of this source tree.  
+ * 
  */
 
 import React, { useEffect } from 'react';
@@ -29,7 +36,7 @@ const EngagementInvite = () => {
       $('.sakura-falling').sakura();
     }
 
-    const countDownDate = new Date("Aug 27, 2024 10:30:00").getTime();
+    const countDownDate = new Date("Aug 27, 2024 10:00:00").getTime();
 
     const x = setInterval(() => {
       const now = new Date().getTime();
@@ -71,7 +78,7 @@ const EngagementInvite = () => {
             <h2>&</h2>
             <h1 id="Aditya">Aditya</h1>
             <h3>Are getting engaged</h3>
-            <p> on <span className="date">27th August 2024, 10:30 AM</span>, At <span className="place">Ekadashi Banquet Hall</span>, Sangavi, Pune. </p>
+            <p> on <span className="date">27th August 2024, 10:00 AM</span>, At <span className="place">Ekadashi Banquet Hall</span>, Sangavi, Pune. </p>
             <img src={midFlower} alt="" srcset="" />
           </div>
         </div>
@@ -101,8 +108,8 @@ const EngagementInvite = () => {
         <p className="happiness"> Your presence is requested! <br />
         <cite className="cite"> -- Kharote Family -- </cite>
           <div className="links">
-            <a href="https://github.com/raj-dusane" target="_blank" rel="noopener noreferrer" className="GitHub"> <img src={GitHub} alt="" /> </a>
-            <a href="https://www.linkedin.com/in/rajdusane/" target="_blank" className="linkedIn"> <span className='copyrights'>&#169;</span> Raj Dusane</a> 
+            {/* <a href="https://github.com/raj-dusane" target="_blank" rel="noopener noreferrer" className="GitHub"> <img src={GitHub} alt="" /> </a> */}
+            <a href="https://www.linkedin.com/in/rajdusane/" target="_blank" className="linkedIn"> Copyright <span className='copyrights'>&#169;</span> 2024 Raj Dusane <br/> All rights reserved. [licensed]</a> 
           </div>
         </p>
       </div>
