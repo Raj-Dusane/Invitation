@@ -11,11 +11,14 @@
 
 import React, { useEffect } from 'react';
 import { Analytics } from '@vercel/analytics/react';
+import { Fade } from "react-awesome-reveal";
 import leftFlower from './assets/img/pinkFlower_left.png';
 import rightFlower from './assets/img/pinkFlower_right.png';
 import midFlower from './assets/img/midFlower.png';
-import song from '/mp3/With-You-Ap-Dhillon.mp3';
+import heart from './assets/img/heart.png';
 import invitationCard from './assets/Invitation_Card/Invitation_Card.png';
+import song from '/mp3/With-You-Ap-Dhillon.mp3';
+import 'animate.css';
 import './style.css';
 
 const EngagementInvite = () => {
@@ -72,15 +75,23 @@ const EngagementInvite = () => {
       
       <div className='holder'>
         <section id="god">श्री गणेशाय नमः।</section>
-
         <div className="wrap">
           <div className="title">
-            <h1 id="Vaishnavi">Vaishnavi</h1>
-            <h2>&</h2>
-            <h1 id="Aditya">Aditya</h1>
-            <h3>Are getting engaged</h3>
-            <p> on <span className="date">27th August 2024, 10:00 AM</span>, At <span className="place">Ekadashi Banquet Hall</span>, Sangavi, Pune. </p>
-            <img src={midFlower} alt="" srcset="" />
+            <Fade direction='down' triggerOnce={true} effect="bounce">
+              <h1 id="Vaishnavi">Vaishnavi</h1>
+            </Fade>
+            {/* <Fade> */}
+              {/* <h2>&</h2> */}
+                <img className="heart animate__heartBeat" src={heart}/>
+            {/* </Fade> */}
+            <Fade direction='up' triggerOnce={true}>
+              <h1 id="Aditya">Aditya</h1>
+            </Fade>
+            <Fade cascade damping={0.2} triggerOnce={true}>
+              <h3>Are getting engaged</h3>
+              <p> on <span className="date">27th August 2024, 10:30 AM</span>, At <span className="place">Ekadashi Banquet Hall</span>, Sangavi, Pune. </p>
+              <img src={midFlower} alt="" srcset="" />
+            </Fade>
           </div>
         </div>
 
