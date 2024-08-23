@@ -15,7 +15,7 @@ import { Fade } from "react-awesome-reveal";
 import leftFlower from './assets/img/pinkFlower_left.png';
 import rightFlower from './assets/img/pinkFlower_right.png';
 import midFlower from './assets/img/midFlower.png';
-import heart from './assets/img/heart.png';
+import heart from './assets/img/heart.webg';
 import invitationCard from './assets/Invitation_Card/Invitation_Card.png';
 import song from '/mp3/With-You-Ap-Dhillon.mp3';
 import 'animate.css';

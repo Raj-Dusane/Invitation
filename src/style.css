@@ -396,9 +396,9 @@ img {
 	font-weight: 500;
 	font-style: normal;
 	font-size: 55px;
-	margin-bottom: 25px;
+	/* margin-bottom: 10px; */
 	/* padding-top: 15px; */
-	/* margin: 50px 0 20px 0; */
+	margin: 30px 0 15px 0;
 	color: #674ea7;
 }
 
@@ -407,7 +407,7 @@ img {
 	font-weight: 500;
 	font-style: normal;
 	font-size: 55px;
-	margin: 30px 0;
+	margin: 10px 0 50px 0px;
 	color: #674ea7;
 }
 
@@ -513,10 +513,10 @@ body {
 }
 
 .title .heart {
-	height: 50px;
-	width: 50px;
+	height: 100px;
+	width: 100px;
 	margin: 0px;
-	/* transform: rotate(3deg); */
+	transform: rotate(3deg);
 }
 
 #time {
