@@ -351,7 +351,6 @@
 }
 
 
-/*******************************/
 .sakura-falling::-webkit-scrollbar {
 	display: none;
 }
@@ -361,10 +360,29 @@
 	scrollbar-width: none;
 }
 
+/*******************************/
+
+* {
+	margin: 0;
+    padding: 0;
+	font-family: 'Arvo', serif;
+}
+
 body {
 	font-family: Arial, Helvetica, Sans-serif;
 	background-color: #ffffff;
 	/* background-color: #fff8f9; */
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	/* height: 100vh;
+    width: 100%; */
+	flex-direction: column;
+}
+
+a {
+	text-decoration: none;
+	color: #674ea7;
 }
 
 img {
@@ -372,7 +390,7 @@ img {
 	height: auto;
 }
 
-@media (max-width:900px) {
+@media (max-width:500px) {
 	.top-right-decoration {
 		max-width: 52%;
 	}
@@ -384,6 +402,7 @@ img {
 	}
 }
 
+/* xxxxxxxxx Page Design xxxxxxxxx */
 .top-right-decoration {
 	position: absolute;
 	top: 0;
@@ -398,12 +417,37 @@ img {
 	display: block;
 }
 
+.holder{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
 #god {
 	color: #b33a46;
 	/* color: #9b313c; */
 	font-weight: bold;
 	font-size: 14px;
 	margin-top: 80px;
+}
+
+.wrap {
+	display: -webkit-flex;
+	display: flex;
+	-webkit-flex-wrap: wrap;
+	flex-wrap: wrap;
+	-webkit-justify-content: center;
+	justify-content: center;
+	-webkit-align-items: center;
+	align-items: center;
+	padding: 15px 0px;
+	text-align: center;
+	min-height:100%;
+}
+
+.title {
+	margin-top: 20px;
 }
 
 .title #Vaishnavi {
@@ -414,51 +458,11 @@ img {
 	color: #674ea7;
 }
 
-.title #Aditya {
-	font-family: "Bonheur Royale", cursive;
-	font-weight: 500;
-	font-style: normal;
-	font-size: 55px;
-	margin: 7px 0px 0px 0px;
-	color: #674ea7;
-}
-
-.greet {
-	font-weight: 300;
-	font-family: "Tiro Devanagari Marathi", serif;
-	text-transform: uppercase;
-	/* letter-spacing: 4px; */
-	font-size: 20px;
-	color: #674ea7;
-	font-size: 18px;
-	color: #674ea7;
-	margin: 16px;
-	padding-top: 20px;
-	text-align: center;
-}
-
-.title h3 {
-	font-weight: 300;
-	text-transform: uppercase;
-	letter-spacing: 4px;
-	font-size: 18px;
-	color: #674ea7;
-	margin-top: 5px;
-}
-
-.title p {
-	color: #564861;
-	margin-top: 30px;
-	padding: 0px 20px;
-	text-transform: uppercase;
-	letter-spacing: 3px;
-	font-size: 15px;
-}
-
-.title .midFlower {
-	margin-top: 30px;
-	width: 90%;
-	height: 90%;
+.title .heart {
+	height: 100px;
+	width: 100px;
+	margin: 0px;
+	transform: rotate(10deg);
 }
 
 .heartContainer {
@@ -482,6 +486,15 @@ img {
 	line-height: 0;
 }
 
+.title #Aditya {
+	font-family: "Bonheur Royale", cursive;
+	font-weight: 500;
+	font-style: normal;
+	font-size: 55px;
+	/* margin: 7px 0px 0px 0px; */
+	color: #674ea7;
+}
+
 .bottom-flowers {
 	margin: 0px 0px 30px 0px;
 	padding: 0px;
@@ -490,85 +503,53 @@ img {
 	overflow: visible;
 }
 
-.holder{
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	justify-content: center;
+.title h3 {
+	font-weight: 300;
+	text-transform: uppercase;
+	letter-spacing: 4px;
+	font-size: 18px;
+	color: #674ea7;
+	margin-top: 5px;
 }
 
-.wrap {
-	display: -webkit-flex;
-	display: flex;
-	-webkit-flex-wrap: wrap;
-	flex-wrap: wrap;
-	-webkit-justify-content: center;
-	justify-content: center;
-	-webkit-align-items: center;
-	align-items: center;
-	padding: 15px 0px;
-	text-align: center;
-	min-height:100%;
+.title p {
+	color: #564861;
+	margin-top: 30px;
+	padding: 0px 20px;
+	text-transform: uppercase;
+	letter-spacing: 3px;
+	font-size: 15px;
 }
 
-
-/** **/
-
-* {
-	margin: 0;
-    padding: 0;
-	font-family: 'Arvo', serif;
+.date {
+	color: #874562;
+	font-weight: 900;
 }
 
-body {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	/* height: 100vh;
-    width: 100%; */
-	flex-direction: column;
+.place {
+	color: #874562;
+	font-weight: 900;
 }
 
-.title {
-	margin-top: 20px;
+.title .midFlower {
+	margin-top: 30px;
+	width: 90%;
+	height: 90%;
 }
 
-.title .heart {
-	height: 100px;
-	width: 100px;
-	margin: 0px;
-	transform: rotate(10deg);
-}
-
+/* Count down time start */
 #time {
 	width: 270px;
 	max-width: 270px;
 	height: auto;
-	margin: 20px 10px 10px 10px;
+	margin: 20px 20px 10px 20px;
 	padding: 20px;
 	background-color: #eee;
 	border-radius: 20px;
-	font-size: 16px;
-}
-
-.venue {
-	width: auto;
-	height: auto;
-	background-color: #674ea7;
-	border-radius: 14px;
-	text-align: center;
-	color: #fff;
-	padding: 8px;
-	margin-right: 8px;
-}
-
-.venue a {
-	text-decoration: none;
-	color: #fff;
 }
 
 .container {
-	/* font-weight: bold; */
+	font-weight: bold;
 	font-size: 30px;
 	display: grid;
 	grid-template-columns: 1fr 1fr;
@@ -611,20 +592,41 @@ body {
 }
 
 .size{
+	font-size: 16px;
+}
+/* Count down time end */
+
+.greet {
+	font-weight: 300;
+	font-family: "Tiro Devanagari Marathi", serif;
+	text-transform: uppercase;
+	font-size: 20px;
+	color: #674ea7;
 	font-size: 18px;
+	color: #674ea7;
+	margin: 16px;
+	padding-top: 20px;
+	text-align: center;
 }
 
-.date {
-	color: #874562;
-	font-weight: 900;
+.actions {
+	display: flex;
+	font-size: 12px;
+	letter-spacing: 0pt;
 }
 
-.place {
-	color: #874562;
-	font-weight: 900;
+.venue {
+	width: auto;
+	height: auto;
+	background-color: #674ea7;
+	border-radius: 14px;
+	text-align: center;
+	color: #fff;
+	padding: 8px;
+	margin-right: 8px;
 }
 
-.footer {
+.invite {
 	color: #564861;
 	font-family: "Tiro Devanagari Marathi", serif;
 	font-weight: 500;
@@ -633,24 +635,8 @@ body {
 	margin: 24px;
 }
 
-.phone {
-	color: #874562
-}
-
-.end-msg {
-	width: auto;
-	height: auto;
-	padding: 12px;
-	background: linear-gradient(90deg, #b33a46, #9b313c);
-	border-radius: 20px;
-	font-size: 14px;
-	color: #fff;
-	font-size: 24px;
-}
-
-a {
-	text-decoration: none;
-	color: #674ea7;
+.music {
+	display: none;
 }
 
 .happiness {
@@ -663,6 +649,12 @@ a {
 	margin-bottom: 24px;
 }
 
+.cite {
+	display: flex;
+	justify-content: flex-end;
+	font-size: 12px;
+}
+
 .links {
 	margin-top: 30px;
 	display: flex;
@@ -671,32 +663,4 @@ a {
 	font-size: 4px;
 	color: #674ea7;
 	gap: 8px;
-}
-
-.cite {
-	display: flex;
-	justify-content: flex-end;
-	font-size: 12px;
-}
-
-.links img {
-	margin: 0px;
-	padding: 0px;
-	width: 15px;
-	height: 10px;
-	cursor: pointer;
-}
-
-.copyrights {
-	font-size: 6px;
-}
-
-.music {
-	display: none;
-}
-
-.actions {
-	display: flex;
-	font-size: 12px;
-	letter-spacing: 0pt;
 }

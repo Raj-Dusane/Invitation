@@ -79,7 +79,7 @@ const EngagementInvite = () => {
         <section id="god">श्री गणेशाय नमः।</section>
         <div className="wrap">
           <div className="title">
-            <Fade direction='down' triggerOnce={true} effect="bounce">
+            <Fade direction="down" triggerOnce={true} effect="bounce">
               <h1 id="Vaishnavi">Vaishnavi</h1>
             </Fade>
             <Fade triggerOnce={true}>
@@ -98,7 +98,7 @@ const EngagementInvite = () => {
             <Fade cascade damping={0.2} triggerOnce={true}>
               <h3>Are getting engaged</h3>
               <p> on <span className="date">27th August 2024, 10:30 AM</span>, At <span className="place">Ekadashi Banquet Hall</span>, Sangavi, Pune. </p>
-              <img className='midFlower' src={midFlower} alt="" srcset="" />
+              <img className='midFlower' src={midFlower}/>
             </Fade>
           </div>
         </div>
@@ -116,7 +116,7 @@ const EngagementInvite = () => {
           </a>
         </div>
 
-        <p className="footer">
+        <p className="invite">
           {/* Can't wait to celebrate the auspicious moment of our family with you! <br /> */} 
           आमच्या कुटुंबाच्या या खास क्षणाचा आनंद तुमच्यासोबत साजरा करण्यासाठी आम्ही खूपच उत्सुक आहोत! आपल्यासोबत हा सोहळा आणखी खास होईल.<br/>
         </p>
@@ -128,7 +128,7 @@ const EngagementInvite = () => {
         <p className="happiness"> Your presence is requested! <br />
         <cite className="cite"> -- Kharote Family -- </cite>
           <div className="links">
-            <a href="https://www.linkedin.com/in/rajdusane/" target="_blank" className="linkedIn"> Copyright <span className='copyrights'>&#169;</span> 2024 Raj Dusane <br/> All rights reserved. [licensed]</a> 
+            <a href="https://www.linkedin.com/in/rajdusane/" target="_blank"> Copyright <span style={{fontSize:'5.5px'}}>&#169;</span> 2024 Raj Dusane <br/> All rights reserved. [Licensed: BSD-4-Clause]</a> 
           </div>
         </p>
       </div>
