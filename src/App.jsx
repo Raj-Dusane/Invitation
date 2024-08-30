@@ -41,7 +41,7 @@ const EngagementInvite = () => {
       $('.sakura-falling').sakura();
     }
 
-    const countDownDate = new Date("Aug 27, 2024 10:30:00").getTime();
+    const countDownDate = new Date("Aug 27, 2030 10:30:00").getTime();
 
     const x = setInterval(() => {
       const now = new Date().getTime();
