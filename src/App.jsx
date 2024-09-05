@@ -72,6 +72,8 @@ const EngagementInvite = () => {
   return (
     <div className="sakura-falling" onClick={playAudio}>
       <Analytics />
+      <div className="warning">The invitation is currently viewable only on mobile devices.</div>
+
       <img src={rightFlower} alt="image-top-right" className="top-right-decoration" />
       <img src={leftFlower} alt="image-top-left" className="top-left-decoration" />
       
